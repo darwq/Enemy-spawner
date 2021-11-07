@@ -1,0 +1,43 @@
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+section h1 {
+  font-size: 6rem;
+  font-family: "Helvetica";
+  font-weight: 500;
+  text-shadow: 3px 3px 7px grey;
+  color: #ffffff;
+  position: absolute;
+  z-index: 999;
+}
+
+/* JAVASCRIPT CLASSES */
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+@media (max-width: 750px) {
+  section h1 {
+    text-align: center;
+  }
+}
